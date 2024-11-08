@@ -21,28 +21,54 @@
 
     </header>
 
+    <div class="popup" id="popup">
+        <div class="popup__content">
+          <!-- <button class="popup__close" onclick="closePopup()">×</button> -->
+          <img src="./assets/Ellipse 24.png" alt="image" class="popup__image" id="popupImage">
+
+          <div class="popup__alldetails">
+            <h3 class="popup__name" id="popupName">John Doe</h3>
+            <p class="popup__alldetails__designation" id="popupDesignation">Chief Marketing Officer</p>
+            <p class="popup__alldetails__company" id="popupCompany">Acme Corp</p>
+            <div class="icons">
+              <i class="fa-brands fa-drupal"></i>
+              <i class="fa-brands fa-x-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+           
+          </div>
+       
+         <hr>
+          <p class="popup__details" id="popupDetails">Monotonectally synergize business communities rather than client-centric convergence. Assertively unleash cross-platform best practices rather than pandemic total linkage. Synergistically monetize parallel infomediaries whereas 2.0 mindshare. Dramatically pursue real-time markets through e-business strategic theme areas.</p>
+          <button class="popup__close" id="close"><i class="fa-solid fa-x"></i></button>
+        </div>
+    </div>
+
     <main class="main">
 <section class="speaker-slider">
-    <div class="speaker-slider__card">
-        <img src="./assets/Ellipse 24 (1).png" alt="">
+    <div class="speaker-slider__card" id="slide-0">
+        <img src="./assets/Ellipse 24.png" alt="">
         <h3>John Doe</h3>
         <p class="desig">Chief Marketing Officer</p>
         <p>Acme Corp</p>
     </div>
-    <div class="speaker-slider__card">
-        <img src="./assets/Ellipse 24 (2).png" alt="">
+    <div class="speaker-slider__card" id="slide-1">
+
+        <img src="./assets/Ellipse 24 (3).png" alt="">
         <h3>John Doe</h3>
         <p class="desig">Chief Engagement Officer</p>
         <p>Acquia</p>
     </div>
-    <div class="speaker-slider__card">
-        <img src="./assets/Ellipse 24 (3).png" alt="">
+    <div class="speaker-slider__card" id="slide-2">
+
+        <img src="./assets/Ellipse 24 (2).png" alt="">
         <h3>John Doe</h3>
         <p class="desig">Chief Technical Developer</p>
         <p>Pantheon</p>
     </div>
-    <div class="speaker-slider__card">
-        <img src="./assets/Ellipse 24.png" alt="">
+    <div class="speaker-slider__card" id="slide-3">
+
+        <img src="./assets/Ellipse 24 (1).png" alt="">
         <h3>John Doe</h3>
         <p class="desig">Chief Marketing Officer</p>
         <p>Specbee</p>
@@ -51,7 +77,11 @@
 
 </section>
 
+
+
     </main>
-    <button>See the Program</button>
+    <button class="seeButton">See the Program</button>
 </body>
+<script src="./speaker.js"> </script>
+<script src="https://kit.fontawesome.com/f2bb2ac3bf.js" crossorigin="anonymous"></script>
 </html>

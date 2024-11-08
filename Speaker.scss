@@ -57,7 +57,7 @@ header{
    display: grid;
    grid-template-columns: repeat(4,1fr);
 gap: 20px;
-margin-top: 190px;
+margin-top: 120px;
 // margin-left: 30px;
 
     &__card{
@@ -87,7 +87,7 @@ margin-top: 190px;
 
     
 }
-button{
+.seeButton{
    position: relative;
    background: rgba(0, 63, 180, 1);
    width: 405px;
@@ -96,6 +96,52 @@ button{
    margin: auto;
    color: white;
    font-size: 20px;
-   margin-top: 85px;
-   left: 689px;
+   margin-top: 65px;
+   margin-bottom: 20px;
+   left: 619px;
+}
+.popup{
+  display: none;
+   width: 90%;
+   margin: auto;
+   margin-top: 170px;
+
+
+
+    &__content{
+       display: flex;
+       box-shadow: 4px 10px 24px 0px rgba(0, 0, 0, 0.1);
+       border: 1px solid white;
+       width: 90%;
+       margin: auto;
+    }
+    img{
+      padding: 20px;
+    }
+    hr{
+      color: rgba(107, 107, 107, 1);
+    }
+        &__alldetails{
+         display: flex;
+         padding: 20px;
+         flex-direction: column;
+         width: 40%;
+              &__designation{
+               font-weight: 600;
+              }
+
+              &__company{
+               color: rgba(107, 107, 107, 1);
+              }
+        
+        }
+        &__details{
+         padding: 20px;
+        }
+  &__close{
+   height: 20px;
+   border: none;
+   border-radius: 5px;
+   text-decoration: none;
+  }
 }
