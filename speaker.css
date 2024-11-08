@@ -12,9 +12,8 @@ header {
   text-align: center;
   position: relative;
   width: 1200px;
+  margin: auto;
   top: 100px;
-  left: 120px;
-  gap: 10px;
   background-color: rgb(255, 255, 255);
   height: 64px;
 }
@@ -27,6 +26,53 @@ header .header__subtitle {
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.speaker-slider {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 190px;
+}
+.speaker-slider__card {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 21px 36px 21px;
+  align-items: center;
+  border: 1px solid rgb(238, 211, 211);
+  border-radius: 10px;
+  box-shadow: 4px 10px 24px 0px rgba(0, 0, 0, 0.1);
+  height: 321px;
+}
+.speaker-slider__card h3 {
+  font-size: 24px;
+}
+.speaker-slider__card p {
+  color: rgb(107, 107, 107);
+}
+.speaker-slider__card .desig {
+  font-weight: 600;
+  color: black;
+}
+
+button {
+  position: relative;
+  background: rgb(0, 63, 180);
+  width: 405px;
+  border-radius: 10px;
+  height: 52px;
+  margin: auto;
+  color: white;
+  font-size: 20px;
+  margin-top: 85px;
+  left: 689px;
 }
 
 /*# sourceMappingURL=speaker.css.map */
