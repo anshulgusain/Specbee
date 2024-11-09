@@ -67,3 +67,47 @@ document.getElementById("close").addEventListener("click",()=>{
 document.querySelectorAll(".speaker-slider__card").forEach(slide => {
     slide.addEventListener("click", () => open(slide.id));
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const container=document.querySelector('.main')
+  const slider = document.querySelector('.speaker-slider');
+const leftButton = document.getElementById('left');
+const rightButton = document.getElementById('right');
+let currentPosition=0;
+
+let currentSlide = 0;
+const cards = document.querySelectorAll('.speaker-slider__card');
+const totalSlides = cards.length;
+
+function shiftRight() {
+  const cards = document.querySelectorAll('.speaker-slider__card');
+  slider.prepend(cards[currentPosition]);
+  currentPosition = (currentPosition + 1) % cards.length;
+}
+
+function shiftLeft() {
+  const cards=document.querySelectorAll('.speaker-slider__card');
+
+  slider.prepend(cards[cards.length-1]);
+  currentPosition = (currentPosition - 1 + cards.length) % cards.length;
+  
+}
+
+
+
+leftButton.addEventListener("click",shiftLeft)
+rightButton.addEventListener('click',shiftRight)
