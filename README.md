@@ -18,4 +18,4 @@ Clean and Modular CSS: Follows BEM naming conventions for easy maintenance.
 JavaScript ES6: Vanilla JavaScript for interactive functionality.
 
 Deployed Link-
-https://harmonious-sawine-b0643c.netlify.app/
+https://lively-snickerdoodle-222a3e.netlify.app/
