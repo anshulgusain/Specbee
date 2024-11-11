@@ -71,18 +71,6 @@ document.querySelectorAll(".speaker-slider__card").forEach(slide => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 const container=document.querySelector('.main')
   const slider = document.querySelector('.speaker-slider');
 const leftButton = document.getElementById('left');
